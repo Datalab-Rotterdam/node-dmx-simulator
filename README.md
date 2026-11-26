@@ -5,7 +5,7 @@ fixtures on your network: it receives **sACN** and **Art-Net**, answers
 **Art-Net discovery** and **RDM**, and shows what your lights would do in a
 browser.
 
-![Classroom rig on the endless canvas: roof, stage, trusses and audience area as shapes, eight front pars selected with the details panel open](docs/screenshot.jpg)
+![The simulator in a browser: LED bars, pars and moving heads lit by sACN; selecting the front pars, resizing a moving head with its corner handle, undo from the right-click menu, zooming in and fitting the view](docs/demo.gif)
 
 - Lay out a virtual stage: pars, LED bars, pixel strips, moving heads, dimmers
 - Drag fixtures around and change their patch in the browser. Select several to move, align, readdress or delete them together; right-click for more. Undo with ⌘Z / Ctrl+Z. Edits are saved to a JSON rig file
@@ -92,6 +92,8 @@ Setting `DMX_START_ADDRESS` or `DEVICE_LABEL` over RDM changes the fixture in
 the UI and in your rig file.
 
 ## Using the web UI
+
+![Classroom rig with the eight front pars selected and the details panel open](docs/screenshot.jpg)
 
 The canvas fills the window and has no edges: put fixtures and shapes anywhere.
 The top bar, the details panel and the zoom controls float on top of it.
