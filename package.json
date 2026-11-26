@@ -1,6 +1,6 @@
 {
   "name": "node-dmx-simulator",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A stage full of virtual DMX fixtures on your network: receives sACN and Art-Net, answers Art-Net discovery and RDM, and shows the result in your browser. Test lighting code without real lights.",
   "type": "module",
   "bin": {
