@@ -5,7 +5,9 @@ fixtures on your network: it receives **sACN** and **Art-Net**, answers
 **Art-Net discovery** and **RDM**, and shows what your lights would do in a
 browser.
 
-![The simulator in a browser: LED bars, pars and moving heads lit by sACN; selecting the front pars, resizing a moving head with its corner handle, undo from the right-click menu, zooming in and fitting the view](docs/demo.gif)
+[![30-second demo: the classroom rig lit by sACN, the details panel, the live universe view, adding fixtures and editing an LED bar. Click to play.](docs/demo-poster.jpg)](https://github.com/Datalab-Rotterdam/node-dmx-simulator/blob/main/docs/demo.mp4)
+
+▶ [Watch the 30-second demo](https://github.com/Datalab-Rotterdam/node-dmx-simulator/blob/main/docs/demo.mp4)
 
 - Lay out a virtual stage: pars, LED bars, pixel strips, moving heads, dimmers
 - Drag fixtures around and change their patch in the browser. Select several to move, align, readdress or delete them together; right-click for more. Undo with ⌘Z / Ctrl+Z. Edits are saved to a JSON rig file
