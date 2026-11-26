@@ -1,0 +1,22 @@
+{
+  "name": "node-dmx-simulator-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Web UI for the node-dmx DMX simulator (SvelteKit with adapter-node, served by the simulator process).",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^6.0.6",
+    "@sveltejs/kit": "^3.4.1",
+    "@sveltejs/vite-plugin-svelte": "^7.3.2",
+    "svelte": "^5.59.2",
+    "svelte-check": "^4.7.8",
+    "typescript": "^6.0.3",
+    "vite": "^8.4.0"
+  }
+}

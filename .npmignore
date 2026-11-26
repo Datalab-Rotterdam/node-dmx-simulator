@@ -1,0 +1,3 @@
+# What gets published is set by "files" in package.json. This file only
+# stops npm from applying .gitignore, which leaves out the built web UI.
+node_modules/

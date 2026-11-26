@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+            ui/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The web UI is its own SvelteKit package in ui/.
+      - name: Install web UI dependencies
+        run: npm ci --prefix ui
+
+      - name: Type-check (simulator and web UI)
+        run: npm run check
+
+      - name: Build the package
+        run: npm run build
+
+      - name: Run tests
+        run: npx vitest run
+
+      - name: Check the package contents
+        run: npm pack --dry-run --ignore-scripts
+
+  release:
+    name: Release to npm
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Strip stale npm auth line (avoids breaking OIDC, see actions/setup-node#1551)
+        run: sed -i '/_authToken/d' "${NPM_CONFIG_USERCONFIG:-$HOME/.npmrc}"
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npm ci --prefix ui
+
+      - name: Ensure npm supports trusted publishing
+        run: npm install -g npm@latest
+
+      # `npm publish` runs `prepack`, which builds the web UI and dist/cli.js.
+      # @semantic-release/npm publishes with npm trusted publishing (OIDC) when
+      # it is set up for this package, otherwise with the NPM_TOKEN secret.
+      # The very first release needs NPM_TOKEN: trusted publishing can only be
+      # enabled once the package exists on npm.
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release

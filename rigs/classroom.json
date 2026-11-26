@@ -1,0 +1,215 @@
+{
+  "name": "Classroom stage",
+  "shapes": [
+    {
+      "id": "roof",
+      "kind": "roof",
+      "name": "Roof",
+      "x": 600,
+      "y": 330,
+      "width": 1300,
+      "height": 760
+    },
+    {
+      "id": "stage",
+      "kind": "stage",
+      "name": "Stage",
+      "x": 600,
+      "y": 330,
+      "width": 1200,
+      "height": 660
+    },
+    {
+      "id": "back-truss",
+      "kind": "truss",
+      "name": "Back truss",
+      "x": 600,
+      "y": 110,
+      "width": 1140,
+      "height": 24
+    },
+    {
+      "id": "front-truss",
+      "kind": "truss",
+      "name": "Front truss",
+      "x": 600,
+      "y": 560,
+      "width": 1000,
+      "height": 24
+    },
+    {
+      "id": "audience",
+      "kind": "area",
+      "name": "Audience",
+      "x": 600,
+      "y": 900,
+      "width": 1000,
+      "height": 260,
+      "color": "#3b82f6"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "front-1",
+      "name": "Front 1",
+      "type": "drgb",
+      "universe": 1,
+      "address": 1,
+      "x": 180,
+      "y": 560
+    },
+    {
+      "id": "front-2",
+      "name": "Front 2",
+      "type": "drgb",
+      "universe": 1,
+      "address": 5,
+      "x": 300,
+      "y": 560
+    },
+    {
+      "id": "front-3",
+      "name": "Front 3",
+      "type": "drgb",
+      "universe": 1,
+      "address": 9,
+      "x": 420,
+      "y": 560
+    },
+    {
+      "id": "front-4",
+      "name": "Front 4",
+      "type": "drgb",
+      "universe": 1,
+      "address": 13,
+      "x": 540,
+      "y": 560
+    },
+    {
+      "id": "front-5",
+      "name": "Front 5",
+      "type": "drgb",
+      "universe": 1,
+      "address": 17,
+      "x": 660,
+      "y": 560
+    },
+    {
+      "id": "front-6",
+      "name": "Front 6",
+      "type": "drgb",
+      "universe": 1,
+      "address": 21,
+      "x": 780,
+      "y": 560
+    },
+    {
+      "id": "front-7",
+      "name": "Front 7",
+      "type": "drgb",
+      "universe": 1,
+      "address": 25,
+      "x": 900,
+      "y": 560
+    },
+    {
+      "id": "front-8",
+      "name": "Front 8",
+      "type": "drgb",
+      "universe": 1,
+      "address": 29,
+      "x": 1020,
+      "y": 560
+    },
+    {
+      "id": "spot-left",
+      "name": "Spot L",
+      "type": "moving-head",
+      "universe": 1,
+      "address": 33,
+      "x": 260,
+      "y": 300
+    },
+    {
+      "id": "spot-right",
+      "name": "Spot R",
+      "type": "moving-head",
+      "universe": 1,
+      "address": 44,
+      "x": 940,
+      "y": 300
+    },
+    {
+      "id": "bar-1",
+      "name": "Bar 1",
+      "type": "led-bar",
+      "universe": 2,
+      "address": 1,
+      "x": 195,
+      "y": 110
+    },
+    {
+      "id": "bar-2",
+      "name": "Bar 2",
+      "type": "led-bar",
+      "universe": 2,
+      "address": 25,
+      "x": 465,
+      "y": 110
+    },
+    {
+      "id": "bar-3",
+      "name": "Bar 3",
+      "type": "led-bar",
+      "universe": 2,
+      "address": 49,
+      "x": 735,
+      "y": 110
+    },
+    {
+      "id": "bar-4",
+      "name": "Bar 4",
+      "type": "led-bar",
+      "universe": 2,
+      "address": 73,
+      "x": 1005,
+      "y": 110
+    },
+    {
+      "id": "house-1",
+      "name": "House 1",
+      "type": "dimmer",
+      "universe": 2,
+      "address": 101,
+      "x": 420,
+      "y": 300
+    },
+    {
+      "id": "house-2",
+      "name": "House 2",
+      "type": "dimmer",
+      "universe": 2,
+      "address": 102,
+      "x": 540,
+      "y": 300
+    },
+    {
+      "id": "house-3",
+      "name": "House 3",
+      "type": "dimmer",
+      "universe": 2,
+      "address": 103,
+      "x": 660,
+      "y": 300
+    },
+    {
+      "id": "house-4",
+      "name": "House 4",
+      "type": "dimmer",
+      "universe": 2,
+      "address": 104,
+      "x": 780,
+      "y": 300
+    }
+  ]
+}

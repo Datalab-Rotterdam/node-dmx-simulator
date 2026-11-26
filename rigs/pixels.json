@@ -1,0 +1,56 @@
+{
+  "name": "Pixel strips",
+  "shapes": [
+    {
+      "id": "stage",
+      "kind": "stage",
+      "name": "Stage",
+      "x": 600,
+      "y": 150,
+      "width": 1200,
+      "height": 300
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "strip-u1",
+      "name": "Strip U1",
+      "type": "pixel-strip",
+      "cells": 170,
+      "universe": 1,
+      "address": 1,
+      "x": 600,
+      "y": 60
+    },
+    {
+      "id": "strip-u2",
+      "name": "Strip U2",
+      "type": "pixel-strip",
+      "cells": 170,
+      "universe": 2,
+      "address": 1,
+      "x": 600,
+      "y": 120
+    },
+    {
+      "id": "strip-u3",
+      "name": "Strip U3",
+      "type": "pixel-strip",
+      "cells": 170,
+      "universe": 3,
+      "address": 1,
+      "x": 600,
+      "y": 180
+    },
+    {
+      "id": "strip-u4",
+      "name": "Strip U4",
+      "type": "pixel-strip",
+      "cells": 170,
+      "universe": 4,
+      "address": 1,
+      "x": 600,
+      "y": 240
+    }
+  ]
+}

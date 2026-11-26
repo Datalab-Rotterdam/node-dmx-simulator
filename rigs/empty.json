@@ -1,0 +1,18 @@
+{
+  "name": "Empty stage",
+  "shapes": [
+    {
+      "id": "stage",
+      "kind": "stage",
+      "name": "Stage",
+      "x": 600,
+      "y": 350,
+      "width": 1200,
+      "height": 700
+    }
+  ],
+  "monitorUniverses": [
+    1
+  ],
+  "fixtures": []
+}

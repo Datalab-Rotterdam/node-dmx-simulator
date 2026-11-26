@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Web UI build output (shipped in the npm package, built by `npm run build`)
+ui/build/
+ui/.svelte-kit/
+
+# Rig file created by `npm start`
+dmx-rig.json

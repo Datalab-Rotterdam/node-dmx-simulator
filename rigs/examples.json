@@ -1,0 +1,52 @@
+{
+  "name": "node-dmx examples",
+  "shapes": [
+    {
+      "id": "stage",
+      "kind": "stage",
+      "name": "Stage",
+      "x": 600,
+      "y": 250,
+      "width": 1200,
+      "height": 500
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "par-u1",
+      "name": "Par U1",
+      "type": "rgbww",
+      "universe": 1,
+      "address": 1,
+      "x": 300,
+      "y": 250
+    },
+    {
+      "id": "par-u2",
+      "name": "Par U2",
+      "type": "rgbww",
+      "universe": 2,
+      "address": 1,
+      "x": 500,
+      "y": 250
+    },
+    {
+      "id": "par-u3",
+      "name": "Par U3",
+      "type": "rgbww",
+      "universe": 3,
+      "address": 1,
+      "x": 700,
+      "y": 250
+    },
+    {
+      "id": "par-u4",
+      "name": "Par U4",
+      "type": "rgbww",
+      "universe": 4,
+      "address": 1,
+      "x": 900,
+      "y": 250
+    }
+  ]
+}

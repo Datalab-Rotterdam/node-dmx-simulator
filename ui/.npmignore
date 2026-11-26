@@ -1,0 +1,4 @@
+# The build is published (see "files" in ../package.json); keep npm from
+# applying .gitignore here.
+node_modules/
+.svelte-kit/

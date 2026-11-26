@@ -1,0 +1,90 @@
+{
+  "name": "node-dmx-simulator",
+  "version": "0.0.0-development",
+  "description": "A stage full of virtual DMX fixtures on your network: receives sACN and Art-Net, answers Art-Net discovery and RDM, and shows the result in your browser. Test lighting code without real lights.",
+  "type": "module",
+  "bin": {
+    "node-dmx-simulator": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "rigs",
+    "ui/build",
+    "!**/*.map"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx src/index.ts --dev",
+    "build": "tsx scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run check --prefix ui",
+    "test": "vitest",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "node-dmx": "^1.3.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^13.1.3",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.3",
+    "vite": "^8.4.0",
+    "vitest": "^4.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Datalab-Rotterdam/node-dmx-simulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Datalab-Rotterdam/node-dmx-simulator/issues"
+  },
+  "homepage": "https://github.com/Datalab-Rotterdam/node-dmx-simulator#readme",
+  "keywords": [
+    "dmx",
+    "dmx512",
+    "simulator",
+    "lighting",
+    "sacn",
+    "e1.31",
+    "artnet",
+    "art-net",
+    "rdm",
+    "e1.20",
+    "node-dmx",
+    "education"
+  ],
+  "author": "A.P.A. Slaa",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "node-dmx-simulator(release): 🚀 ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  }
+}
