@@ -7,8 +7,6 @@ browser.
 
 https://github.com/user-attachments/assets/17b407be-d308-4b54-a22c-32763208ffd2
 
-▶ [Watch the 30-second demo](https://github.com/Datalab-Rotterdam/node-dmx-simulator/blob/main/docs/demo.mp4)
-
 - Lay out a virtual stage: pars, LED bars, pixel strips, moving heads, dimmers
 - Drag fixtures around and change their patch in the browser. Select several to move, align, readdress or delete them together; right-click for more. Undo with ⌘Z / Ctrl+Z. Edits are saved to a JSON rig file
 - See each fixture's channel values, a 512-channel view of each universe, and who is sending
