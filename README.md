@@ -5,7 +5,7 @@ fixtures on your network: it receives **sACN** and **Art-Net**, answers
 **Art-Net discovery** and **RDM**, and shows what your lights would do in a
 browser.
 
-[![30-second demo: the classroom rig lit by sACN, the details panel, the live universe view, adding fixtures and editing an LED bar. Click to play.](docs/demo-poster.jpg)](https://github.com/Datalab-Rotterdam/node-dmx-simulator/blob/main/docs/demo.mp4)
+https://github.com/user-attachments/assets/17b407be-d308-4b54-a22c-32763208ffd2
 
 ▶ [Watch the 30-second demo](https://github.com/Datalab-Rotterdam/node-dmx-simulator/blob/main/docs/demo.mp4)
 
